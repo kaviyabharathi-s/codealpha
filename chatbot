@@ -1,0 +1,28 @@
+ # Define the conversation pairs (FAQ and responses)
+faq_pairs = [
+    [r"what is your return policy?", 
+     ["We have a 30-day return policy. You can return any item within 30 days of purchase."]],
+    
+    [r"how do I track my order?", 
+     ["You can track your order by visiting the 'Track Order' section on our website and entering your order ID."]],
+    
+    [r"what payment methods do you accept?", 
+     ["We accept Visa, MasterCard, PayPal, and several other payment options."]],
+    
+    [r"what is your support email?", 
+     ["You can reach us at support@ourcompany.com."]],
+    
+    [r"how do I contact customer support?", 
+     ["You can contact customer support via our support email or by calling our toll-free number at 1-800-555-5555."]],
+    
+    [r"quit", 
+     ["Goodbye! Have a nice day."]]
+]
+# Create the chatbot instance
+chatbot = Chat(faq_pairs, reflections)
+
+# Start the chatbot conversation
+print("Welcome to the FAQ Chatbot! Type 'quit' to exit.")
+chatbot.converse()
+
+    
